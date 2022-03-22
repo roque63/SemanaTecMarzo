@@ -40,12 +40,12 @@ def square(start, end):
 
 def circle2(start, end):
     """Draw circle from start to end."""
-    print("Circle")
+    print("Circulo rojo")
 
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
-    print("rectangle")
+    print("rectangle azul")
 
 
 def triangle(start, end):
@@ -76,7 +76,9 @@ state = {'start': None, 'shape': line}
 setup(420, 420, 0, 0)
 
 onscreenclick(tap)
+# Guarda todos los eventos del teclado en una cola 
 listen()
+# onkey Escucha los eventos del teclado 
 onkey(undo, 'u')
 onkey(lambda: color('black'), 'K')
 onkey(lambda: color('white'), 'W')
